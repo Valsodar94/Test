@@ -4,5 +4,6 @@ Description: Test function
 Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
-    Handler: index.handler
-    Runtime: nodejs10.x
+    Properties:
+      Handler: index.handler
+      Runtime: nodejs10.x
