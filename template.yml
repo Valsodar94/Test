@@ -4,3 +4,4 @@ Description: Test function
 Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
+    Handler: index.handler
