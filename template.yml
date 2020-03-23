@@ -7,11 +7,4 @@ Resources:
     Properties:
       Handler: index.handler
       Runtime: nodejs10.x
-      InlineCode: |
-        exports.handler = async (event) => {
-        const response = {
-            statusCode: 200,
-            body: JSON.stringify('Hello from Lambda!'),
-        };
-        return response;
-        };
+      CodeUri: ./index.js
