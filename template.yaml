@@ -3,11 +3,10 @@ Transform: AWS::Serverless-2016-10-31
 Description: Test function
 Resources:
   TimeFunction:
-    Type: AWS::Lambda::Function
+    Type: AWS::Serverless::Function
     Properties:
       Role: arn:aws:iam::119575005155:role/service-role/RezGain_Ari_update_role
       FunctionName: TestLambdaCDCI
       Handler: index.handler
       Runtime: nodejs10.x
-      Code: 
-        ZipFile: ./
+      CodeUri: ./
