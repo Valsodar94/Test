@@ -14,7 +14,7 @@ Resources:
                 - ec2:DescribeNetworkInterfaces
                 - ec2:DeleteNetworkInterface
               Resource: '*'
-      FunctionName: TestLambdaCDCI
+      FunctionName: TestFunction
       Handler: index.handler
       Runtime: nodejs10.x
       CodeUri: ./
