@@ -23,4 +23,4 @@ Outputs:
     Description: Exporting lambda
     Value: 1
     Export:
-      Name: !Ref TimeFunction
+      Name: !Ref TimeFunction.Arn
