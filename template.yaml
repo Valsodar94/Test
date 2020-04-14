@@ -18,9 +18,3 @@ Resources:
       Handler: index.handler
       Runtime: nodejs10.x
       CodeUri: ./
-Outputs:
-  UsedForExport:
-    Description: Exporting lambda
-    Value: 1
-    Export:
-      Name: !Ref TimeFunction.Arn
