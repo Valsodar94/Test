@@ -5,6 +5,21 @@ Resources:
   TimeFunction:
     Type: AWS::Serverless::Function
     Properties:
+      Policies: 
+        - Version: "2012-10-17"
+          Statement:
+            - Effect: Allow
+              Action:
+                - logs:CreateLogStream
+                - logs:PutLogEvents
+                - logs:CreateLogGroup
+              Resource: 'arn:aws:logs:*:*:*'
+            - Effect: Allow
+              Action:
+                - ec2:CreateNetworkInterface
+                - ec2:DescribeNetworkInterfaces
+                - ec2:DeleteNetworkInterface
+              Resource: '*'
       Role: arn:aws:iam::119575005155:role/service-role/RezGain_Ari_update_role
       FunctionName: TestLambdaCDCI
       Handler: index.handler
