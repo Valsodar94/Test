@@ -20,7 +20,6 @@ Resources:
                 - ec2:DescribeNetworkInterfaces
                 - ec2:DeleteNetworkInterface
               Resource: '*'
-      Role: arn:aws:iam::119575005155:role/service-role/RezGain_Ari_update_role
       FunctionName: TestLambdaCDCI
       Handler: index.handler
       Runtime: nodejs10.x
